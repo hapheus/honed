@@ -1,5 +1,8 @@
 # Honed
 
+> [!NOTE]
+> **Work in Progress (WIP):** Honed is currently under active development. APIs, CLI flags, and detector rules may change before the first stable release.
+
 [![CI](https://github.com/hapheus/honed/actions/workflows/ci.yml/badge.svg)](https://github.com/hapheus/honed/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/hapheus/honed/actions/workflows/codeql.yml/badge.svg)](https://github.com/hapheus/honed/actions/workflows/codeql.yml)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/hapheus/honed/badge)](https://scorecard.dev/viewer/?uri=github.com/hapheus/honed)
