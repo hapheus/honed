@@ -1,0 +1,19 @@
+# Dependencies & build output
+node_modules/
+dist/
+build/
+coverage/
+
+# Runtime & local honed state
+.honed/config.local.json
+.honed/*.log
+.honed/*.tmp
+
+# OS & editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+.env
+.env.local

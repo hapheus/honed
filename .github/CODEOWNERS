@@ -1,0 +1,6 @@
+# Global owners (minimum 2 reviewers required on main)
+* @hapheus @MustermenschAlex @kuenstlichedummheit-sys @majorungustl
+
+# GitHub Actions workflows & security policies
+/.github/ @hapheus @MustermenschAlex @kuenstlichedummheit-sys @majorungustl
+/SECURITY.md @hapheus @MustermenschAlex @kuenstlichedummheit-sys @majorungustl

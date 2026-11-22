@@ -1,0 +1,35 @@
+name: Bug Report
+description: Report a bug in the Honed CLI, detector rules, or skill playbooks
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug in **Honed**.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the unexpected behavior or false positive/negative.
+      placeholder: Expected exit code 2, got 0...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal code snippet or command to reproduce the issue.
+      placeholder: |
+        1. Run `npx honed detect ...`
+        2. Observe output
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node/Bun version, Honed version, and AI coding tool (if applicable).
+      placeholder: macOS 15, Node 22, Honed 0.1.0, Claude Code
+    validations:
+      required: false

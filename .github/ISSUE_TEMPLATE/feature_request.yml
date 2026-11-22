@@ -1,0 +1,19 @@
+name: Feature Request
+description: Propose a new detector rule, command playbook, or provider integration
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What engineering gap, anti-pattern, or workflow should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the rule, command behavior, or CLI flag you have in mind.
+    validations:
+      required: true

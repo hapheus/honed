@@ -1,0 +1,54 @@
+{
+  "name": "honed",
+  "version": "0.1.0",
+  "description": "A quality-first engineering skill and deterministic AI-slop detector for AI coding agents. Build software that is simple, secure, maintainable, reliable, and ready for production.",
+  "keywords": [
+    "ai-agents",
+    "skills",
+    "clean-code",
+    "architecture",
+    "solid",
+    "dry",
+    "yagni",
+    "backend",
+    "security",
+    "static-analysis",
+    "sarif",
+    "anti-patterns"
+  ],
+  "license": "MIT",
+  "author": "hapheus",
+  "homepage": "https://github.com/hapheus/honed#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapheus/honed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hapheus/honed/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "bin": {
+    "honed": "dist/cli/index.js"
+  },
+  "files": ["dist/cli/", "dist/skills/", "LICENSE", "README.md"],
+  "scripts": {
+    "build:skills": "bun run scripts/build.ts",
+    "build:cli": "bun build src/cli/index.ts --outdir dist/cli --target node --format esm && chmod +x dist/cli/index.js",
+    "build": "bun run build:skills && bun run build:cli",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "test": "bun test",
+    "detect:self": "bun run src/cli/index.ts detect src scripts",
+    "check": "bun run lint && bun run typecheck && bun run build && bun run test && bun run detect:self"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.10.0",
+    "bun-types": "^1.2.0",
+    "typescript": "^5.7.2"
+  }
+}
